@@ -2,7 +2,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
 import { StyleSheet } from "react-native";
 import { CustomDrawerContent } from "./CustumDrawerContent";
-import { HomeScreen } from "../pages/Home";
+import { HomeScreen } from "../Screens/Home";
 import { Entypo } from "@expo/vector-icons";
 import { Texto } from "../components/common/texts";
 

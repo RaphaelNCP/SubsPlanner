@@ -5,7 +5,7 @@ import {
   Roboto_700Bold,
   Roboto_100Thin,
 } from "@expo-google-fonts/roboto";
-import { Text } from "react-native";
+import { Text, TextStyle, View, ViewStyle } from "react-native";
 
 type TextProps = {
   as: string;
@@ -14,11 +14,13 @@ type TextProps = {
     | "Roboto_400Regular"
     | "Roboto_700Bold"
     | "Roboto_900Black";
+  styles?: TextStyle;
 } & React.ComponentProps<typeof Text>;
 
 export const Texto = ({
   as,
   font = "Roboto_400Regular",
+  styles,
   ...props
 }: TextProps) => {
   let [fontsLoaded, fontError] = useFonts({
@@ -33,7 +35,7 @@ export const Texto = ({
   }
 
   return (
-    <Text {...props} style={{ fontFamily: font }}>
+    <Text {...props} style={[{ fontFamily: font }, styles]}>
       {as}
     </Text>
   );

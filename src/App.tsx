@@ -32,6 +32,7 @@ export default function App() {
           name="Home"
           component={HomeScreen}
           options={{
+            title: "Página Inicial",
             drawerIcon: () => (
               <Entypo
                 name="home"
@@ -49,6 +50,7 @@ export default function App() {
           name="Adicionar"
           component={HomeScreen}
           options={{
+            title: "Adcionar",
             drawerIcon: () => (
               <Entypo
                 name="plus"
@@ -58,7 +60,7 @@ export default function App() {
               />
             ),
             drawerLabel: () => (
-              <Texto as="Página Inicial" styles={styles.itemText} />
+              <Texto as="Adicionar assinatura" styles={styles.itemText} />
             ),
           }}
         />

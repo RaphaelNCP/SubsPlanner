@@ -6,9 +6,9 @@ import {
   DrawerItemList,
 } from "@react-navigation/drawer";
 import { View, StyleSheet } from "react-native";
-import { Texto } from "../rootComponents/texts";
 import { Entypo } from "@expo/vector-icons";
 import { styles } from "./CustumDrawerContent";
+import { Texto } from "../../components/common/texts";
 
 export const CustomDrawerContent: React.FC<DrawerContentComponentProps> = (
   props

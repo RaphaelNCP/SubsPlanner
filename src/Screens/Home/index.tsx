@@ -11,7 +11,7 @@ export const HomeScreen = ({ navigation }: any) => {
       <FAB
         title={<Entypo name="plus" size={24} color="white" />}
         style={styles.fab}
-        onPress={() => navigation.navigate("Add")}
+        onPress={() => navigation.navigate("Adicionar")}
         color="#ED7D31"
       />
     </View>

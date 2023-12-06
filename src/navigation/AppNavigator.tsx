@@ -5,6 +5,7 @@ import { CustomDrawerContent } from "./CustumDrawerContent";
 import { HomeScreen } from "../Screens/Home";
 import { Entypo } from "@expo/vector-icons";
 import { Texto } from "../components/common/texts";
+import { AddScreen } from "../Screens/Add";
 
 export const AppNavigator = () => {
   const Drawer = createDrawerNavigator();
@@ -47,7 +48,7 @@ export const AppNavigator = () => {
         />
         <Drawer.Screen
           name="Adicionar"
-          component={HomeScreen}
+          component={AddScreen}
           options={{
             title: "Adcionar",
             drawerIcon: () => (
